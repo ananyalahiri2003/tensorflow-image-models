@@ -7,6 +7,15 @@ Original pytorch code and weights from
 `<https://github.com/microsoft/unilm/tree/master/beit>`_.
 This code has been ported from the
 `timm <https://github.com/rwightman/pytorch-image-models>`_ implementation.
+
+The following models are available.
+* ``beit_base_patch16_224``
+* ``beit_base_patch16_384``
+* ``beit_base_patch16_224_in22k``
+* ``beit_large_patch16_224``
+* ``beit_large_patch16_384``
+* ``beit_large_patch16_512``
+* ``beit_large_patch16_224_in22k``
 """
 
 # BEIT: BERT Pre-Training of Image Transformers (https://arxiv.org/abs/2106.08254)
@@ -31,4 +40,6 @@ from tfimm.utils import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 
 # Model registry will add each entrypoint fn to this
 __all__ = ["BERTPretrainImageTransformer", "BERTPretrainImageTransformerConfig"]
+
+
 
